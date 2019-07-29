@@ -1,0 +1,5 @@
+en:
+  hello: "Hello world" 
+  say_hello: 'say hello'
+  user:
+    name: 'Name'
