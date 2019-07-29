@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este es un repositorio de mi curso de ruby on rails api en udemy -> link:
 
-Things you may want to cover:
+Nosotros veremos:
 
-* Ruby version
+* Instalar gemas
 
-* System dependencies
+* JsonBuilder
 
-* Configuration
+* JWT
 
-* Database creation
+* Sesiones con DEVISE
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* ETC
 
 * ...
