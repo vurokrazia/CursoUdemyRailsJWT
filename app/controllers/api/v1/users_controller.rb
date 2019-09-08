@@ -11,6 +11,8 @@ class Api::V1::UsersController < ApplicationController
     if @user.valid_password?(params[:user][:password])
       @token = Token.new(user_id: @user.id)
       if @token.save
+          json_encode = {token: @token.token}
+          @token.token = JWT.encode(json_encode, @key)
           render "api/v1/users/show"
       else 
         render json: {response: t('credentials.invalid')}, status: :bad_request

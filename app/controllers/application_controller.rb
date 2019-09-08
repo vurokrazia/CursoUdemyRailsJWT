@@ -3,6 +3,12 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
   #before_action :authenticate
   private
+  rescue_from CanCan::AccessDenied do |exception|
+    render json: {message: t('rules.dont_permission')}, status: :unauthorized
+  end
+  def current_ability
+   @current_ability ||= Ability.new(@current_user)  	
+  end
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
     @key = Rails.application.secrets.secret_key_base

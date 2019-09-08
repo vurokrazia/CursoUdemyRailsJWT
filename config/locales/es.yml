@@ -17,9 +17,11 @@ es:
   messages:
     add_name: "Debe registar el nombre del recurso"
     dont_find: 'No se encuentra el recurso solicitado'
+    delete: "Elemento destruido"
   rules:
     dont_empty: "No se encontratron parametros en el recurso"
     dont_register: 'No se a podido crear el recurso solicitado'
+    dont_permission: "No tiene suficientes privilegios para esta acción"
   crud:
     created: '%{resource} registrado'
     updated: '%{resource} actualizado'
